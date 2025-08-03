@@ -1,0 +1,61 @@
+.header-main {
+    background: #353535;
+    display: flex;
+    padding: 12px 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-main h1 {
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: .3px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.header-main ul {
+    display: flex;
+    gap: 20px;
+}
+
+.header-main ul li {
+    list-style: none;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .header-main {
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+    .header-main ul {
+        padding: 0px;
+    }
+
+    input {
+        width: 228px;
+        height: 23px;
+    }
+
+    form {
+        display: flex;
+        align-items: center;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 11px 18px;
+    }
+
+    .header-main ul li {
+        font-size: 14px;
+    }
+
+    .card-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
